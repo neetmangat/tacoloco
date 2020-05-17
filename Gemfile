@@ -73,4 +73,4 @@ end
 gem 'pagy'
 gem 'simple_form'
 gem 'font-awesome-rails'
-gem 'devise'
+gem 'devise', '3.0.3'
