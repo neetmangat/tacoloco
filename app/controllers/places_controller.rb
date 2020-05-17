@@ -5,4 +5,8 @@ class PlacesController < ApplicationController
         @pagy, @places = pagy(Place.all, page: params[:page], items: 3)
     end
 
+    def new
+        @place = Place.new 
+    end
+
 end
