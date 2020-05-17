@@ -3,7 +3,7 @@ class PlacesController < ApplicationController
     include Pagy::Backend
 
     def index
-        @pagy, @places = pagy(Place.all, page: params[:page], items: 3)
+        @pagy, @places = pagy(Place.all, page: params[:page], items: 5)
     end
 
     def new
