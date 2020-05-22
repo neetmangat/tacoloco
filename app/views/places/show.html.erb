@@ -103,47 +103,52 @@
 <br />
 <div class="clear"></div>
 
-<!-- List Comments --!>
-    <div class="col-10 offset 1">
-        <h1 class="float-left"> Comments </h1>
-        <button type="button" class="btn btn-primary btn-sm float-right" data-toggle="modal" data-target="#commentModal">
-            Add a comment
-        </button>
-    </div>
+<!-- COMMENTS & PHOTOS --!>
+    <div class="col-8 offset-2"
+        <!-- List Comments --!>
+            <div class="col-10 offset 1">
+                <h1 class="float-left"> Comments </h1>
+                <button type="button" class="btn btn-primary btn-sm float-right" data-toggle="modal" data-target="#commentModal">
+                    Add a comment
+                </button>
+            </div>
 
-    <div class="row">
-        <% @place.comments.each do |comment| %>
-            <div class="col-12 col-sm-6">
-                <blockquote>
-                <% if comment.humanized_rating.present? %>
-                    <b><%= comment.humanized_rating %></b> -
+            <div class="row">
+                <% @place.comments.each do |comment| %>
+                    <div class="col-12 col-sm-6">
+                        <blockquote>
+                        <% if comment.humanized_rating.present? %>
+                            <b><%= comment.humanized_rating %></b> -
+                        <% end %>
+                        <%= comment.message %>
+                        <small><%= comment.user.email %></small>
+                        </blockquote>
+                    </div>
                 <% end %>
-                <%= comment.message %>
-                <small><%= comment.user.email %></small>
-                </blockquote>
             </div>
-        <% end %>
-    </div>
-<!-- List Comments --!>
+        <!-- List Comments --!>
 
-<br />
-<div class="clear"></div>
+        <br />
+        <hr />
+        <div class="clear"></div>
 
-<!-- List Photos --!>
-    <div class="col-10 offset 1">
-        <h1 class="float-left"> Photos </h1>
-        <button type="button" class="btn btn-primary btn-sm float-right" data-toggle="modal" data-target="#photoModal">
-            Add a Photo
-        </button>
-    </div>
-
-    <div class="row">
-        <% @place.photos.each do |photo| %>
-            <div class="col-12 col-sm-6">
-                <%= image_tag photo.picture.url, class: 'img-fluid' %><br />
-                <%= photo.caption %><br />
-                <small>Submitted by <%= photo.user.email %></small><br />
+        <!-- List Photos --!>
+            <div class="col-10 offset 1">
+                <h1 class="float-left"> Photos </h1>
+                <button type="button" class="btn btn-primary btn-sm float-right" data-toggle="modal" data-target="#photoModal">
+                    Add a Photo
+                </button>
             </div>
-        <% end %>
+
+            <div class="row">
+                <% @place.photos.each do |photo| %>
+                    <div class="col-12 col-sm-6">
+                        <%= image_tag photo.picture.url, class: 'img-fluid' %><br />
+                        <%= photo.caption %><br />
+                        <small>Submitted by <%= photo.user.email %></small><br />
+                    </div>
+                <% end %>
+            </div>
+        <!-- List Photos --!>
     </div>
-<!-- List Photos --!>
+<!-- COMMENTS & PHOTOS --!>
