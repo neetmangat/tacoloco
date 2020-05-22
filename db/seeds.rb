@@ -9,6 +9,6 @@ Place.create!([
   {name: "Fuzzy's Tacos", description: "Fuzzy Fuzzy", address: "13881 Midway Rd Suite 105, Farmers Branch, TX 75244", user_id: 1, latitude: 32.9378237, longitude: -96.8395806},
   {name: "Torchy's Tacos", description: "Tacos", address: "5921 Forest Ln #200, Dallas, TX 75230", user_id: 1, latitude: 32.9099566, longitude: -96.8058368},
   {name: "Velvet Taco 2", description: "Velvettyy", address: "3411 McKinney Ave, Dallas, TX 75204", user_id: 1, latitude: 32.8056021, longitude: -96.7988702},
-  {name: "Resident Taqueria", description: "Some place I found", address: "9661 Audelia Rd #112, Dallas, TX 75238", user_id: 1, latitude: 32.8783699, longitude: -96.7187537}
+  {name: "Resident Taqueria", description: "Some place I found", address: "9661 Audelia Rd #112, Dallas, TX 75238", user_id: 1, latitude: 32.8783699, longitude: -96.7187537},
   {name: "Taco Bell", description: "Who can ignore the classic?", address: "13670 Preston Rd, Dallas, TX 75240", user_id: 2, latitude: 32.9342085, longitude: -96.803321}
 ])
