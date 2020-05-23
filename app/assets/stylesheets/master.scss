@@ -1,5 +1,6 @@
 @import "bootstrap";
 @import "font-awesome";
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&display=swap');
 
 .booyah-box {
     -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
@@ -19,8 +20,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 body {
-    background: image_url('double-bubble-outline.png');
+    background-color: #E8DBBA;
+    // background: image_url('double-bubble-outline.png');
     font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+}
+
+.bg-navbar {
+    background-color: #D3D4E4;
 }
 
 blockquote {
@@ -56,14 +62,18 @@ blockquote p {
 }
 
 .navbar {
-    background: image_url('double-bubble-dark.png');
+    // background: image_url('double-bubble-dark.png');
+    // opacity: 30%;
     box-shadow: 0px 1px 3px #2a2a2a;
 }
 
 .navbar-inverse .navbar-brand {
-    color: #E3E85A;
-    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    color: #E8DBBA;
+    // color: #E3E85A;
+    // font-family: "Helvetica Neue", Helvetica, sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-weight: 600;
+    font-size: 20px;
     letter-spacing: -0.3px;
 }
 
