@@ -2,6 +2,18 @@
 @import "font-awesome";
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&display=swap');
 
+a {
+    color: #44aad9;
+}
+
+a:hover {
+    color: #44aad9;
+}
+
+.info {
+    color: #2e6e8d;
+}
+
 .booyah-box {
     -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
     -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
@@ -12,19 +24,35 @@
     margin-top: 10px;
     margin-bottom: 15px;
     padding: 20px;
+    font-family: 'Raleway', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
     padding: 0;
+    color: #44aad9;
 }
 
 body {
-    background-color: #f5ebd3;
-    // #E8DBBA;
+    // background-image: linear-gradient(#fff5e0, #ffeac0);
+    background-color: #fff5e0;
+    // #f5ebd3;
     // background: image_url('double-bubble-outline.png');
     font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
 }
+
+.btn-danger {
+    background-color: lightcoral;
+}
+
+.add-buttons {
+    // margin-left: auto;
+    // margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 .bg-navbar {
     background-color: #D3D4E4;
@@ -55,6 +83,12 @@ blockquote p {
     clear: both;
 }
 
+.divider{
+    width:5px;
+    height:auto;
+    display:inline-block;
+}
+
 .invalid-feedback {
     color: #ff3333;
     background-color: #FFEEEE;
@@ -69,8 +103,8 @@ blockquote p {
 }
 
 .navbar-inverse .navbar-brand {
-    color: #E8DBBA;
-    // color: #E3E85A;
+    color: #ffeac0;
+    // color: #E8DBBA;
     // font-family: "Helvetica Neue", Helvetica, sans-serif;
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
@@ -79,7 +113,8 @@ blockquote p {
 }
 
 .paginate {
-  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  // font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-family: 'Raleway', sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
