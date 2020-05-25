@@ -98,18 +98,17 @@ blockquote p {
 
 .navbar {
     // background: image_url('double-bubble-dark.png');
-    // opacity: 30%;
     box-shadow: 0px 1px 3px #2a2a2a;
+    margin-bottom: 0;
 }
 
 .navbar-inverse .navbar-brand {
     color: #ffeac0;
-    // color: #E8DBBA;
-    // font-family: "Helvetica Neue", Helvetica, sans-serif;
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
     font-size: 24px;
     letter-spacing: -0.3px;
+
 }
 
 .paginate {
@@ -123,4 +122,14 @@ blockquote p {
 
 #map {
     height: 300px;
+}
+
+.carousel-inner > .carousel-item > img, .carousel-inner > .carousel-item > a > img {
+    height: 550px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.carousel {
+box-shadow: 0px 3px 8px #2a2a2a;
 }
