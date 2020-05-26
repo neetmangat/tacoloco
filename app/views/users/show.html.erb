@@ -1,20 +1,52 @@
-<div class="booyah-box">
-    <h1>User Profile</h1>
-    <br />
+<br />
+
+<!-- USER INFO -->
+    <div class="booyah-box">
+        <h1><b>User Profile</b></h1>
+        <br />
+
+        <div class="row">
+            <div class="col-sm-4 col-md-3 col-lg-2">
+                <%= image_tag 'user.png', class: 'img-fluid user-image' %>
+            </div>
+            
+            
+            <div class="col-sm-8 col-md-9 col-lg-10">
+                <h3><%= @user.email %></h3>
+                <br />
+                <h4>Member Since: <%= @user.created_at.strftime("%B %d, %Y") %></h4>
+                <h4>Total Comments: <%= @user.comments.count %></h4>
+                <h4>Total 5-star Reviews: <%= @user.comments.where(rating: '5_stars').count %></h4>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <br />
+
+    </div>
+<!-- USER INFO -->
+
+<br /><br />
+
+<!-- USER COMMENTS-->
+
+    <h1 class="text-center"><b>Comments</b></h1>
+    <br /><br />
 
     <div class="row">
-        <div class="col-sm-4 col-md-3 col-lg-2">
-            <%= image_tag 'user.png', class: 'img-fluid user-image' %>
-        </div>
-
-        <div class="col-sm-8 col-md-9 col-lg-10">
-            <h3><b><%= @user.email %></b></h3>
-            <br />
-            <h4>Member Since: <%= @user.created_at.strftime("%B %d, %Y") %></h4>
-            <h4>Total Comments: <%= @user.comments.count %></h4>
-            <h4>Total 5-star Reviews: <%= @user.comments.where(rating: '5_stars').count %></h4>
-        </div>
+        <% @user.comments.each do |comment| %>
+            <div class="col-12 col-sm-6">
+                <h4 class="text-center"><%= link_to comment.place.name, place_path(comment.place) %></h4>
+                <blockquote>
+                    <% if comment.humanized_rating.present? %>
+                        <b><%= comment.humanized_rating %></b> -
+                    <% end %>
+                    <%= comment.message %>
+                    <small><%= comment.user.email %></small>
+                </blockquote>
+                <br />
+            </div>
+        <% end %>
     </div>
-    <div class="clear"></div>
-    <br />
-</div>
+
+
+<!-- USER COMMENTS-->
