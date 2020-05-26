@@ -1,6 +1,7 @@
 <br />
 
 <!-- USER INFO -->
+
     <div class="booyah-box">
         <h1><b>User Profile</b></h1>
         <br />
@@ -23,6 +24,7 @@
         <br />
 
     </div>
+
 <!-- USER INFO -->
 
 <br /><br />
@@ -50,3 +52,23 @@
 
 
 <!-- USER COMMENTS-->
+
+<div class="clear"></div>
+<br /><hr /><br />
+
+<!-- USER PLACES -->
+
+    <h1 class="text-center"><b>Places</b></h1>
+    <br /><br />
+
+    <% @user.places.each do |place| %>
+        <div class="booyah-box col-10 offset-1 info">
+            <h1><%= link_to place.name, place_path(place) %></h1>
+            <i><%= place.address %></i><br /><br />
+            <p><%= place.description %></p>
+        </div>
+    <% end %>
+
+<!-- USER PLACES -->
+
+<br /><br />
