@@ -121,6 +121,16 @@ blockquote p {
   letter-spacing: 1px;
 }
 
+.user-image {
+//    max-height: 150px;
+//    max-width: 125px;
+
+    height: auto;
+    width: auto;
+    max-height: 150px;
+
+}
+
 #map {
     height: 300px;
 }
