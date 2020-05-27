@@ -9,13 +9,13 @@
             <div class="carousel-item active">
                 <%= image_tag 'slider1.jpg', class: 'd-block img-fluid' %>
                     <div class="carousel-caption d-none d-sm-block">
-                        For Taco Lovers Everywhere
+                        <b>TACO LOCO</b>
                     </div> 
             </div>
             <div class="carousel-item">
                 <%= image_tag 'slider2.jpg', class: 'd-block img-fluid' %>
                     <div class="carousel-caption d-none d-sm-block">
-                        Find the Best Taco Places
+                        For Taco Lovers Everywhere
                     </div> 
             </div>
             <div class="carousel-item">
@@ -45,8 +45,13 @@
             <i><%= place.address %></i><br /><br />
             <p><%= place.description %></p><br />
 
+            <% if place.photos.present? %>
+                THERE ARE PHOTOS
+            <% end %>
+
+
             <% if place.user.present? %>
-                <small><%= place.user.email %></small>
+                <small><i>Added by: <%= link_to place.user.email, user_path(place) %></i></small>
             <% end %>
 
         
@@ -57,7 +62,7 @@
                             <b><%= place.comments.last.humanized_rating %></b> -
                         <% end %>
                             <%= place.comments.last.message %>
-                            <small><%= place.comments.last.user.email %></small>
+                            <small>- <%= place.comments.last.user.email %></small>
                     </blockquote>
                 </div>
             <% end %>
