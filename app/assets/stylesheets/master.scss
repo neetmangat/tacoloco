@@ -23,7 +23,7 @@ a:hover {
     border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
     margin-top: 10px;
     margin-bottom: 15px;
-    padding: 20px;
+    padding: 10px;
     font-family: 'Raleway', sans-serif;
 }
 
@@ -148,8 +148,9 @@ blockquote p {
 //    -webkit-transition: 0.5s ease-in-out ;
 //    -moz-transition: 0.5s ease-in-out ;
 //    -o-transition: 0.5s ease-in-out ;
-    transition: 0.5s ease-in-out left;
-    transform: translate3d(0,0,0) !important;
+//    transition: 1s ease-in-out right;
+//    transform: translate3d(0,0,0) !important;
+    transition : fade;
 }
 
 .carousel-caption {
@@ -169,3 +170,6 @@ blockquote p {
 //    overflow: hidden;
 }
 
+.indeximage {
+    max-height: 250px;
+}

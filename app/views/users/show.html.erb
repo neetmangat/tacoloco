@@ -31,13 +31,14 @@
 
 <!-- USER COMMENTS-->
 
+<div class ="booyah-box">
     <h1 class="text-center"><b>Comments</b></h1>
     <br /><br />
 
     <div class="row">
         <% @user.comments.each do |comment| %>
             <div class="col-12 col-sm-6">
-                <h4 class="text-center"><%= link_to comment.place.name, place_path(comment.place) %></h4>
+                <h5 class="text-center"><%= link_to comment.place.name, place_path(comment.place) %></h5>
                 <blockquote>
                     <% if comment.humanized_rating.present? %>
                         <b><%= comment.humanized_rating %></b> -
@@ -50,25 +51,26 @@
         <% end %>
     </div>
 
+</div>
 
 <!-- USER COMMENTS-->
 
 <div class="clear"></div>
-<br /><hr /><br />
+<br /><br />
 
 <!-- USER PLACES -->
-
+<div class ="booyah-box">
     <h1 class="text-center"><b>Places</b></h1>
     <br /><br />
 
     <% @user.places.each do |place| %>
-        <div class="booyah-box col-10 offset-1 info">
+        <div class=" col-10 offset-1 info">
             <h1><%= link_to place.name, place_path(place) %></h1>
             <i><%= place.address %></i><br /><br />
-            <p><%= place.description %></p>
+            <hr />
         </div>
     <% end %>
-
+</div>
 <!-- USER PLACES -->
 
 <br /><br />
