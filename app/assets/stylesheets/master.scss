@@ -143,6 +143,11 @@ blockquote p {
     object-fit: cover;
 }
 
+.carousel-inner > .carousel-item {
+    -webkit-transform: 0.5s; 
+    -moz-transform: 0.5s;
+}
+
 .carousel-caption {
     font-family: 'Raleway', sans-serif;
     font-size: 25px;
