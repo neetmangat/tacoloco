@@ -138,7 +138,7 @@ blockquote p {
 }
 
 .carousel-inner > .carousel-item > img, .carousel-inner > .carousel-item > a > img {
-    height: 450px;
+    height: 400px;
     width: 100%;
     object-fit: cover;
 }
@@ -152,8 +152,8 @@ blockquote p {
     font-family: 'Raleway', sans-serif;
     font-size: 25px;
     font-weight: 100;
-    text-shadow: rgba(0,0,0,0.95) 2px 2px;
     color: #FFF;
+    text-shadow: rgba(0,0,0,0.95) 2px 2px;
     background-color: rgba(0, 0, 0, 0.4);
     width: 100%;
     position: absolute;
