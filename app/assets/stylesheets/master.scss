@@ -138,9 +138,26 @@ blockquote p {
 }
 
 .carousel-inner > .carousel-item > img, .carousel-inner > .carousel-item > a > img {
-    height: 550px;
+    height: 450px;
     width: 100%;
     object-fit: cover;
+}
+
+.carousel-bg {
+    background-color: #222;
+    width: auto;
+}
+
+.carousel-caption {
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;
+    font-weight: 100;
+    text-shadow: rgba(0,0,0,0.95) 2px 2px;
+    color: #FFF;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    position: absolute;
+    left: 0;
 }
 
 .carousel {
