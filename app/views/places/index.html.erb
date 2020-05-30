@@ -72,7 +72,7 @@
             <% end %>
 
             <% if place.user.present? %>
-                <small><i>Added by: <%= link_to place.user.email, user_path(place) %></i></small>
+                <small><i>Added by: <%= link_to place.user.email, user_path(place.user) %></i></small>
             <% end %>
 
         </div>
