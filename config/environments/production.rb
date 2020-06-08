@@ -19,7 +19,7 @@ Rails.application.configure do
 #   enable_starttls_auto: true
 #   }
 
-  config.action_mailer.default_url_options = { host:'nomster-neet-mangat.herokuapp.com' }
+  config.action_mailer.default_url_options = { host:'tacolocos.herokuapp.com' }
   # Settings specified here will take precedence over those in config/application.rb.
 
   # Code is not reloaded between requests.
